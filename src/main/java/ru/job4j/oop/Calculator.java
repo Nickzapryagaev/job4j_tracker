@@ -16,11 +16,11 @@ public class Calculator {
         return y - x;
     }
 
-    public int divide (int y) {
+    public int divide(int y) {
         return y / x;
     }
 
-    public int sumAllOperation (int y) {
+    public int sumAllOperation(int y) {
         return sum(y) + multiply(y) + minus(y) + divide(y);
     }
 
