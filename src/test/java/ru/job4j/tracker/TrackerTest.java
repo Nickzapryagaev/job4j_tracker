@@ -67,6 +67,18 @@ public class TrackerTest {
     }
 
     @Test
+    public void whenReplaceIdNotExists() {
+        Tracker tracker = new Tracker();
+        Item bug = new Item();
+        bug.setName("Bug");
+        tracker.add(bug);
+        int id = -12;
+        Item bugWithDesc = new Item();
+        bugWithDesc.setName("Bug with description");
+        assertThat(tracker.replace(id, bugWithDesc)).isFalse();
+    }
+
+    @Test
     public void whenDelete() {
         Tracker tracker = new Tracker();
         Item bug = new Item();
@@ -75,5 +87,15 @@ public class TrackerTest {
         int id = bug.getId();
         tracker.delete(id);
         assertThat(tracker.findById(id)).isNull();
+    }
+
+    @Test
+    public void whenDeleteIdNotExists() {
+        Tracker tracker = new Tracker();
+        Item bug = new Item();
+        bug.setName("Bug");
+        tracker.add(bug);
+        int id = -12;
+        assertThat(tracker.delete(id)).isFalse();
     }
 }
