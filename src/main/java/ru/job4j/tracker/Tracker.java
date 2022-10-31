@@ -51,7 +51,6 @@ public class Tracker {
         if (result) {
             item.setId(id);
             items[idToReplace] = item;
-            result = true;
         }
         return result;
     }
@@ -64,7 +63,6 @@ public class Tracker {
                     indexToDelete, size - 1 - indexToDelete);
             items[size - 1] = null;
             size--;
-            result = true;
         }
         return result;
     }
