@@ -1,7 +1,6 @@
 package personal;
 
 public class Test {
-
     public static void printInfo(String[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
