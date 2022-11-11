@@ -4,7 +4,7 @@ import static java.lang.Character.*;
 
 public class PasswordValidator {
 
-    private static final String[] forbiddenStr = new String[]{"qwerty", "12345", "password", "admin", "user"};
+    private static final String[] FORBIDDEN_STR = new String[]{"qwerty", "12345", "password", "admin", "user"};
 
     public static String validate(String password) {
         if (password == null) {
@@ -43,7 +43,7 @@ public class PasswordValidator {
         if (!specialSymbolFound) {
             throw new IllegalArgumentException("Password should contain at least one special symbol");
         }
-        for (String val : forbiddenStr) {
+        for (String val : FORBIDDEN_STR) {
             if (password.toLowerCase().contains(val)) {
                 throw new IllegalArgumentException("Password shouldn't contain "
                         + "substrings: qwerty, 12345, password, admin, user");
