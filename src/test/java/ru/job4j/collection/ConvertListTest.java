@@ -9,6 +9,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ConvertListTest {
+
     @Test
     public void whenTwoList() {
         List<int[]> in = new ArrayList<>();
