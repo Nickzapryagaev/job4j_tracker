@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class StartUITest {
+
     @Test
     public void whenCreateItem() {
         Output out = new StubOutput();

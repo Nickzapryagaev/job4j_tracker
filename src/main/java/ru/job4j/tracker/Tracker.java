@@ -60,10 +60,6 @@ public class Tracker {
         boolean result = indexToDelete != -1;
         if (result) {
             items.remove(id - 1);
-            //System.arraycopy(items, indexToDelete + 1, items,
-              //      indexToDelete, size - 1 - indexToDelete);
-            //items[size - 1] = null;
-            //size--;
         }
         return result;
     }
