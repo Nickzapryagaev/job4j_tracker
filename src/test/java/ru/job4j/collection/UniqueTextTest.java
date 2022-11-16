@@ -1,9 +1,11 @@
 package ru.job4j.collection;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class UniqueTextTest {
+
     @Test
     public void isEquals() {
         UniqueText uniqueText = new UniqueText();
