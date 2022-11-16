@@ -9,6 +9,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class NotifyAccountTest {
+
     @Test
     public void whenTwoAccountsAddSent() {
         NotifyAccount notifyAccount = new NotifyAccount();
