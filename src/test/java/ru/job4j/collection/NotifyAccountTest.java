@@ -42,6 +42,4 @@ public class NotifyAccountTest {
         );
         assertThat(notifyAccount.sent(accounts)).containsAll(expect);
     }
-
-
 }
