@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class PassportOfficeTest {
+
     @Test
     public void whenTestAddMethodTrue() {
         Citizen citizen = new Citizen("2f44a", "Petr Arsentev");
