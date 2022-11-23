@@ -29,7 +29,7 @@ public class JobTest {
     @Test
     public void whenCompatorDescByPriority() {
         int rsl = new JobDescByPriority().compare(
-                new Job("Azc", 0),
+                new Job("Abc", 0),
                 new Job("Abc", 1)
         );
         assertThat(rsl).isGreaterThan(0);
@@ -38,7 +38,7 @@ public class JobTest {
     @Test
     public void whenCompatorAscByPriority() {
         int rsl = new JobAscByPriority().compare(
-                new Job("Azc", 0),
+                new Job("Abc", 0),
                 new Job("Abc", 1)
         );
         assertThat(rsl).isLessThan(0);
