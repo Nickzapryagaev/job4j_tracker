@@ -8,7 +8,6 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class DepartmentsTest {
-
     @Test
     public void whenMissed() {
         List<String> input = Arrays.asList("k1/sk1", "k2/sk1");

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class DepDescCompTest {
+
     @Test
     public void compare() {
         int rsl = new DepDescComp().compare(
